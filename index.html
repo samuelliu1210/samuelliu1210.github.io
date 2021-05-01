@@ -2,7 +2,7 @@
 <<body>
   <center>
     <form>
-      <p>HINT MESSAGE</p>
+      <p>It's a 4 digit lock</p>
       <input type="number" id="secretCode" name="secretCode" oninvalid="InvalidMessage(this)"; oninput="InvalidMessage(this);"><br>
       <a href="Answer.html">
         <input type="submit" value="Submit" onclick="InvalidMessage()">
@@ -12,8 +12,8 @@
 
   <script>
     function InvalidMessage(textbox){
-      if (textbox.value != "12345")
-        textbox.setCustomValidity('That is not the right code...');
+      if (textbox.value != "1234")
+        textbox.setCustomValidity('Nothing happens');
       else {
         textbox.setCustomValidity('');
       }
