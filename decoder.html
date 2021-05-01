@@ -3,7 +3,7 @@
   <center>
     <form>
       <p>Count the ducks</p>
-      <input type="number" id="secretCode" name="secretCode" oninvalid="InvalidMessage(this)"; oninput="InvalidMessage(this);"><br>
+      <input type="number" id="secretCode" name="secretCode" oninvalid="InvalidMessage(this)" oninput="InvalidMessage(this)" required><br>
       <a href="samuelliu1210.github.io/decoderAnswer.html">
         <input type="submit" value="Submit" onclick="InvalidMessage()">
       </a>
@@ -12,7 +12,7 @@
 
   <script>
     function InvalidMessage(textbox){
-      if (textbox.value != "12345" || textbox.value == null)
+      if (textbox.value != "12345")
         textbox.setCustomValidity('Try counting again...');
       else {
         textbox.setCustomValidity('');
