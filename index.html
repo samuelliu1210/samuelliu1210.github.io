@@ -12,7 +12,7 @@
 
   <script>
     function InvalidMessage(textbox){
-      if (textbox.value != "1234")
+      if (textbox.value != "1234" || textbox.value == null)
         textbox.setCustomValidity('Nothing happens');
       else {
         textbox.setCustomValidity('');
