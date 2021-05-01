@@ -2,18 +2,18 @@
 <<body>
   <center>
     <form>
-      <p>HINT MESSAGE</p>
+      <p>Count the ducks</p>
       <input type="number" id="secretCode" name="secretCode" oninvalid="InvalidMessage(this)"; oninput="InvalidMessage(this);"><br>
-      <a href="Answer.html">
+      <a href="decoderAnswer.html">
         <input type="submit" value="Submit" onclick="InvalidMessage()">
-     </a>
+      </a>
     </form>
   </center>
 
   <script>
     function InvalidMessage(textbox){
       if (textbox.value != "12345")
-        textbox.setCustomValidity('That is not the right code...');
+        textbox.setCustomValidity('Try counting again...');
       else {
         textbox.setCustomValidity('');
       }
