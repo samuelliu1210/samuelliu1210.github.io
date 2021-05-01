@@ -4,10 +4,7 @@
     <form>
       <p>HINT MESSAGE</p>
       <input type="number" id="code" name="code" oninvalid="InvalidMessage(this)"; oninput="InvalidMessage(this);"><br>
-      <input type="submit" value="Submit" onclick="show_image('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FHarry-Potter-Goblet-Fire-Book%2Fdp%2F0439139597&psig=AOvVaw2WkAyI7m9_psoXt9vNAig0&ust=1619919345189000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj8v_urp_ACFQAAAAAdAAAAABAD',
-                 276,
-                 110,
-                 'HarryPotter4');">
+      <input type="submit" value="Submit">
     </form>
   </center>
 
@@ -17,6 +14,10 @@
         textbox.setCustomValidity('That is not the right code...');
       else {
         textbox.setCustomValidity('');
+        show_image('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FHarry-Potter-Goblet-Fire-Book%2Fdp%2F0439139597&psig=AOvVaw2WkAyI7m9_psoXt9vNAig0&ust=1619919345189000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj8v_urp_ACFQAAAAAdAAAAABAD',
+                   276,
+                   110,
+                   'HarryPotter4');"
       }
 
       return true;
