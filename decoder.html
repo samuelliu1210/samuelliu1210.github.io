@@ -12,7 +12,7 @@
 
   <script>
     function InvalidMessage(textbox){
-      if (textbox.value != "12345")
+      if (textbox.value != "12345" || textbox.value == null)
         textbox.setCustomValidity('Try counting again...');
       else {
         textbox.setCustomValidity('');
