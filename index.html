@@ -2,7 +2,7 @@
 <<body>
   <center>
     <form action="https://samuelliu1210.github.io/Answer.html">
-      <p>It's a 4 digit lock</p>
+      <p>There's a 4 digit lock combo...</p>
       <input type="number" id="secretCode" name="secretCode" oninvalid="InvalidMessage(this)" oninput="InvalidMessage(this)"><br>
       <input type="submit" value="Submit" onclick="InvalidMessage()">
     </form>
@@ -10,7 +10,7 @@
 
   <script>
     function InvalidMessage(textbox){
-      if (textbox.value != "1234")
+      if (textbox.value != "4159")
         textbox.setCustomValidity('Nothing happens');
       else {
         textbox.setCustomValidity('');
